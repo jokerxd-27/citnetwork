@@ -1,0 +1,32 @@
+{
+  "submitted_by": "Dr. Aisha Khan",
+  "role_organization": "Director, Regional Tech Initiatives",
+  "contact_email": "aisha.khan@example.com",
+  "phone_number": "+923001234567",
+  "center_address": "CIT Center Building, 15-B, Industrial Area, Phase IV, Islamabad",
+  "submission_date": "2025-07-13",
+  "tourist_attractions": "Lok Virsa Museum (GPS: 33.7293° N, 73.0416° E), Faisal Mosque (GPS: 33.7297° N, 73.0374° E), Margalla Hills National Park (GPS: 33.7380° N, 73.0470° E)",
+  "events_festivals": "Pakistan National Folk Festival (Lok Mela) - October, Islamabad Literature Festival - April",
+  "major_crops": "Wheat (rabi), Maize (kharif), Sugarcane, Potatoes",
+  "agri_products": "Organic honey, Dairy products (cheese, yogurt), Fresh vegetables (tomatoes, cucumbers), Basmati rice",
+  "existing_tech": "Smart irrigation systems using IoT, Weather monitoring stations, Online farmer advisory portals, Drone-based crop health monitoring.",
+  "tech_startups": "AgriTech Solutions (AI-driven crop management, Contact: info@agritech.pk), EduSphere (Ed-tech platform for rural areas, Contact: support@edusphere.co)",
+  "available_courses": "Digital Marketing Fundamentals, Web Development (HTML/CSS/JS), Advanced Excel for Business, Modern Hydroponics Techniques, Solar Panel Installation & Maintenance",
+  "training_centers": "National Incubation Center (NIC) Islamabad, Comsats University Skill Development Center, TEVTA Training Institute Rawalpindi",
+  "key_industries": "IT Services, Textile Weaving, Handicrafts (Pottery, Embroidery), Small-scale Food Processing",
+  "manufactured_products": "Software solutions, Embroidered fabrics, Ceramic pottery, Packaged fruit juices",
+  "dp_initiatives": [
+    "Access & Connectivity",
+    "Digital Infrastructure",
+    "E-Government",
+    "Digital Skilling & Literacy",
+    "Innovation & Entrepreneurship"
+  ],
+  "dp_implementation_details": "Implemented free Wi-Fi zones in public spaces, developed a local e-governance portal for permits and registrations, launched digital literacy workshops for small businesses, and established a startup incubator focusing on agri-tech solutions.",
+  "federal_schemes": "Kamyab Jawan Program (youth entrepreneurship loans), Ehsaas Program (social protection and poverty alleviation), Prime Minister's Youth Skills Development Program",
+  "provincial_schemes": "Punjab Rozgar Scheme (small business loans for youth), E-Rozgaar Training Program (freelancing skills), Punjab Green Development Program",
+  "website_url": "https://www.citcenter.org.pk",
+  "facebook_url": "https://facebook.com/CITCenterOfficial",
+  "submission_timestamp_n8n": "2025-07-13T11:46:23.131Z",
+  "status": "pending"
+}
