@@ -1,0 +1,307 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Part 1: The <head> Section - Foundation and Assets -->
+    <!-- Core Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIT Center - Raza Imran</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <!-- External Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- CSS Frameworks and Custom Styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Inline styles to simulate style.css for demonstration as per Part 4 -->
+    <style>
+        /* A. Color Palette & Theme */
+        :root {
+            --bs-dark-rgb: 10, 37, 64; /* #0A2540 */
+            --bs-primary-rgb: 0, 212, 255; /* #00D4FF */
+        }
+        .bg-dark {
+            background-color: #0A2540 !important;
+        }
+        .bg-light {
+            background-color: #F6F9FC !important;
+        }
+        .btn-primary {
+            background-color: #00D4FF;
+            border-color: #00D4FF;
+            color: #0A2540;
+            font-weight: 600;
+        }
+        .btn-primary:hover {
+            background-color: #00b8d9;
+            border-color: #00b8d9;
+        }
+        .text-primary {
+            color: #00D4FF !important;
+        }
+        .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link.active {
+            color: #00D4FF;
+        }
+        
+        /* B. General Styles */
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+        }
+        h1, h2, h3, h4, h5, h6, .navbar-brand {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+
+        /* C. Card Hover Effect */
+        .focus-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .focus-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+        }
+        
+        /* D. Hero Section Background */
+        #hero {
+            background: linear-gradient(rgba(10, 37, 64, 0.7), rgba(10, 37, 64, 0.7)), url('https://via.placeholder.com/1920x1080/0A2540/FFFFFF?text=Tech+Background') no-repeat center center;
+            background-size: cover;
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- I. Header & Navigation Bar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <i class="bi bi-cpu-fill"></i> CIT Center
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <!-- Conditional Nav Link for Focus Areas -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#focus-areas">Focus Areas</a>
+                        </li>
+                        <!-- Conditional Nav Link for Digital Initiatives -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#digital-initiatives">Digital Initiatives</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary ms-lg-3">Get Started</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- II. Hero Section -->
+        <section id="hero" class="py-5 text-center text-white">
+            <div class="container" data-aos="fade-up">
+                <p class="lead mb-2">Center of Information Technology | Islamabad</p>
+                <h1 class="display-3 fw-bold">Driving Digital Transformation in Pakistan</h1>
+                <p class="lead col-lg-8 mx-auto mt-4">
+                    Our mission is to foster innovation, cultivate tech talent, and accelerate the adoption of digital technologies to build a prosperous future for our communities.
+                </p>
+                <a href="#about" class="btn btn-primary btn-lg mt-4">Learn More About Us</a>
+            </div>
+        </section>
+
+        <!-- III. About Us Section -->
+        <section id="about" class="py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6" data-aos="fade-right">
+                        <h2 class="mb-4">About Our Center</h2>
+                        <p>The Center of Information Technology (CIT) is a pioneering institution dedicated to advancing Pakistan's digital landscape. We serve as a hub for research, education, and collaboration, bringing together the brightest minds from academia, industry, and government.</p>
+                        <p>We are committed to creating sustainable technological solutions that address local challenges and unlock new opportunities for growth and development.</p>
+                        <p class="mt-4 fs-5"><i class="bi bi-geo-alt-fill text-primary me-2"></i><strong>Location:</strong> Islamabad, Pakistan</p>
+                    </div>
+                    <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-left">
+                        <img src="https://via.placeholder.com/500x350/F6F9FC/0A2540?text=Our+Team" class="img-fluid rounded shadow" alt="A placeholder image showing the CIT team or facility.">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- IV. Key Focus Areas Section (Conditionally Rendered) -->
+        <section id="focus-areas" class="py-5 bg-light">
+            <div class="container">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <h2 class="fw-bold">Our Key Focus Areas</h2>
+                    <p class="lead text-muted">We concentrate our efforts on pivotal domains that promise the greatest impact.</p>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <!-- Card for Technology & Startups (Conditionally Rendered) -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card h-100 text-center p-4 border-0 shadow-sm focus-card">
+                            <div class="card-body">
+                                <div class="fs-1 text-primary mb-3"><i class="bi bi-rocket-takeoff-fill"></i></div>
+                                <h3 class="card-title h5">Technology & Startups</h3>
+                                <p class="card-text text-muted">Nurturing a vibrant ecosystem for tech startups, from ideation to scaling, through mentorship and funding opportunities.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card for Education & Training (Conditionally Rendered) -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card h-100 text-center p-4 border-0 shadow-sm focus-card">
+                            <div class="card-body">
+                                <div class="fs-1 text-primary mb-3"><i class="bi bi-mortarboard-fill"></i></div>
+                                <h3 class="card-title h5">Education & Training</h3>
+                                <p class="card-text text-muted">Offering cutting-edge courses and training programs in AI, Cybersecurity, and Cloud Computing to build a skilled workforce.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card for Industry & Manufacturing (Conditionally Rendered) -->
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card h-100 text-center p-4 border-0 shadow-sm focus-card">
+                            <div class="card-body">
+                                <div class="fs-1 text-primary mb-3"><i class="bi bi-industry"></i></div>
+                                <h3 class="card-title h5">Key Local Industries</h3>
+                                <p class="card-text text-muted">Driving digital adoption in key industries like textiles and surgical goods to enhance productivity and global competitiveness.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- V. Digital Pakistan & Govt. Schemes Section (Conditionally Rendered) -->
+        <section id="digital-initiatives" class="py-5">
+            <div class="container">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <h2 class="fw-bold">National Digital Vision</h2>
+                    <p class="lead text-muted">Aligning our work with the national agenda for a digitally empowered Pakistan.</p>
+                </div>
+                <div class="row g-5">
+                    <!-- Column 1: Digital Pakistan (Conditionally Rendered) -->
+                    <div class="col-lg-6" data-aos="fade-right">
+                        <h3>Digital Pakistan Vision</h3>
+                        <p>We actively support the Digital Pakistan vision by focusing on its core pillars. Our projects are designed to contribute directly to these national goals.</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><i class="bi bi-check-circle-fill text-primary me-2"></i>Access & Connectivity for all citizens.</li>
+                            <li class="list-group-item"><i class="bi bi-check-circle-fill text-primary me-2"></i>Digital Infrastructure development.</li>
+                            <li class="list-group-item"><i class="bi bi-check-circle-fill text-primary me-2"></i>E-Government services implementation.</li>
+                            <li class="list-group-item"><i class="bi bi-check-circle-fill text-primary me-2"></i>Digital Skills & Literacy enhancement.</li>
+                        </ul>
+                    </div>
+                    <!-- Column 2: Government Schemes (Conditionally Rendered) -->
+                    <div class="col-lg-6" data-aos="fade-left">
+                        <h3>Government Schemes & Support</h3>
+                        <p>We help businesses and individuals leverage government schemes designed to promote technological growth and entrepreneurship.</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><i class="bi bi-check-circle-fill text-primary me-2"></i>Prime Minister's Youth Business & Agriculture Loan Scheme.</li>
+                            <li class="list-group-item"><i class="bi bi-check-circle-fill text-primary me-2"></i>National Incubation Center (NIC) Programs.</li>
+                            <li class="list-group-item"><i class="bi bi-check-circle-fill text-primary me-2"></i>IGNITE National Technology Fund grants.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VI. Contact & Connect Section -->
+        <section id="contact" class="py-5 bg-light">
+            <div class="container">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <h2 class="fw-bold">Get In Touch</h2>
+                    <p class="lead text-muted">We're here to help and answer any question you might have. We look forward to hearing from you.</p>
+                </div>
+                <div class="row g-5">
+                    <div class="col-lg-5" data-aos="fade-right">
+                        <h3 class="h4 mb-4">Contact Information</h3>
+                        <p>Connect with us through the following channels. Our team is ready to assist with your inquiries.</p>
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="fs-4 text-primary me-3"><i class="bi bi-envelope-fill"></i></div>
+                            <div>
+                                <strong>Email:</strong><br>
+                                <a href="mailto:info@cit.org.pk" class="text-decoration-none">info@cit.org.pk</a>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="fs-4 text-primary me-3"><i class="bi bi-telephone-fill"></i></div>
+                            <div>
+                                <strong>Phone:</strong><br>
+                                <a href="tel:+92511234567" class="text-decoration-none">+92 (51) 123-4567</a>
+                            </div>
+                        </div>
+                        <!-- Element-level omission: Address is not rendered as its data is empty -->
+                        <div class="d-flex align-items-center mt-4">
+                            <div class="fs-4 text-primary me-3"><i class="bi bi-clock-fill"></i></div>
+                            <div>
+                                <strong>Office Hours:</strong><br>
+                                Monday - Friday: 9:00 AM - 5:00 PM
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7" data-aos="fade-left">
+                        <form>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingName" placeholder="Your Name">
+                                <label for="floatingName">Full Name</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+                                <label for="floatingEmail">Email address</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingSubject" placeholder="Subject">
+                                <label for="floatingSubject">Subject</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 120px"></textarea>
+                                <label for="floatingTextarea">Your Message</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg w-100">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- VII. Footer -->
+    <footer class="py-4 bg-dark text-white text-center">
+        <div class="container">
+            <p class="mb-0">Copyright &copy; 2025 CIT Center. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Part 3: JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            duration: 600
+        });
+    </script>
+</body>
+</html>
+```
