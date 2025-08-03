@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIT Center - dssfjkasdfkjasdf</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Embedded styles based on Part 4 guidance for a self-contained example */
+        :root {
+            --bs-dark-rgb: 10, 37, 64; /* #0A2540 */
+            --bs-primary-rgb: 0, 212, 255; /* #00D4FF */
+            --bs-light-rgb: 246, 249, 252; /* #F6F9FC */
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+        }
+        h1, h2, h3, h4, h5, h6, .navbar-brand {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+        #hero {
+            background: linear-gradient(rgba(10, 37, 64, 0.7), rgba(10, 37, 64, 0.7)), url('https://via.placeholder.com/1920x1080/0A2540/FFFFFF?text=Tech+Background') no-repeat center center;
+            background-size: cover;
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .btn-primary {
+            background-color: #00D4FF;
+            border-color: #00D4FF;
+            color: #0A2540;
+            font-weight: 600;
+            padding: 0.75rem 1.5rem;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #0A2540;
+            border-color: #0A2540;
+            color: #FFFFFF;
+            transform: translateY(-3px);
+        }
+        .card {
+            transition: all 0.3s ease;
+            border: 1px solid #e0e0e0;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+        }
+        .section-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .form-control:focus {
+            border-color: #00D4FF;
+            box-shadow: 0 0 0 0.25rem rgba(0, 212, 255, 0.25);
+        }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="70">
+
+    <!-- Header & Navigation Bar -->
+    <header>
+        <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">CIT Center</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#focus-areas">Focus Areas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#digital-initiatives">Digital Initiatives</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary ms-lg-3">Get Started</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="py-5 text-center text-white">
+        <div class="container" data-aos="fade-up">
+            <h1 class="display-3 fw-bold">Center of Information Technology</h1>
+            <p class="lead fw-normal mb-4">Empowering tyuioiuytrtyuio with Digital Solutions</p>
+            <p class="col-lg-8 mx-auto">
+                Our mission is to bridge the digital divide by providing access to technology, fostering innovation, and equipping our community with the skills needed for the future economy.
+            </p>
+            <a href="#about" class="btn btn-primary mt-3">Learn More</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h2 class="mb-4">About Our Center</h2>
+                    <p class="lead">We are a dedicated hub for technological advancement and digital literacy. Our goal is to serve as a catalyst for innovation, supporting local businesses, students, and government bodies in their digital transformation journeys.</p>
+                    <p>By leveraging cutting-edge technology and strategic partnerships, we aim to create a thriving tech ecosystem right here in our community.</p>
+                    <p class="mt-4"><i class="bi bi-geo-alt-fill text-primary me-2"></i><strong>Location:</strong> tyuioiuytrtyuio</p>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <img src="https://via.placeholder.com/500x350/F6F9FC/0A2540?text=Our+Team" class="img-fluid rounded shadow-lg" alt="CIT Center Facility">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Focus Areas Section -->
+    <section id="focus-areas" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="mb-3">Our Key Focus Areas</h2>
+                <p class="lead col-lg-8 mx-auto">We concentrate on leveraging technology to enhance the core sectors of our region.</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 text-center shadow-sm">
+                        <div class="card-body">
+                            <i class="bi bi-tree-fill section-icon text-primary"></i>
+                            <h3 class="card-title h5">Agriculture & Crops</h3>
+                            <p class="card-text">Promoting agritech solutions for local farming.</p>
+                            <ul class="list-unstyled">
+                                <li><strong>Major Crops:</strong> Wheat, Cotton, Sugarcane</li>
+                                <li><strong>Agri-Products:</strong> Textiles, Processed Foods</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 text-center shadow-sm">
+                        <div class="card-body">
+                            <i class="bi bi-rocket-takeoff-fill section-icon text-primary"></i>
+                            <h3 class="card-title h5">Tech & Startups</h3>
+                            <p class="card-text">Fostering a vibrant startup ecosystem.</p>
+                            <ul class="list-unstyled">
+                                <li><strong>Tech Startups:</strong> Fintech, Edutech</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 text-center shadow-sm">
+                        <div class="card-body">
+                            <i class="bi bi-person-workspace section-icon text-primary"></i>
+                            <h3 class="card-title h5">Skills & Education</h3>
+                            <p class="card-text">Building a skilled workforce for the digital age.</p>
+                            <ul class="list-unstyled">
+                                <li><strong>Available Courses:</strong> Web Development, Data Science</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card h-100 text-center shadow-sm">
+                        <div class="card-body">
+                            <i class="bi bi-building-fill section-icon text-primary"></i>
+                            <h3 class="card-title h5">Local Industry</h3>
+                            <p class="card-text">Driving efficiency through industrial tech adoption.</p>
+                            <ul class="list-unstyled">
+                                <li><strong>Key Industries:</strong> Agriculture, IT Services</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Digital Pakistan & Govt. Schemes Section -->
+    <section id="digital-initiatives" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="mb-3">National Digital Framework</h2>
+                <p class="lead col-lg-8 mx-auto">Aligning local efforts with the broader national vision for a digital future.</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <div class="card bg-light border-0 p-4">
+                        <h3>Digital Pakistan Vision</h3>
+                        <p>We are actively participating in the national Digital Pakistan vision by implementing and promoting key programs at the local level.</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item bg-transparent"><i class="bi bi-check-circle-fill text-primary me-2"></i><strong>Key Initiatives:</strong> E-Rozgaar, National Incubation Centers</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Connect Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="mb-3">Get in Touch</h2>
+                <p class="lead col-lg-8 mx-auto">Have a question or a project in mind? We'd love to hear from you.</p>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-5" data-aos="fade-right">
+                    <h3 class="h4 mb-4">Contact Information</h3>
+                    <ul class="list-unstyled">
+                        <li class="d-flex mb-3">
+                            <i class="bi bi-geo-alt-fill fs-4 text-primary me-3"></i>
+                            <div>
+                                <strong>Address:</strong><br>
+                                tyuioiuytrtyuio
+                            </div>
+                        </li>
+                        <li class="d-flex mb-3">
+                            <i class="bi bi-telephone-fill fs-4 text-primary me-3"></i>
+                            <div>
+                                <strong>Phone:</strong><br>
+                                +1 (555) 123-4567
+                            </div>
+                        </li>
+                        <li class="d-flex mb-3">
+                            <i class="bi bi-clock-fill fs-4 text-primary me-3"></i>
+                            <div>
+                                <strong>Hours:</strong><br>
+                                Mon - Fri, 9 AM - 5 PM
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-7" data-aos="fade-left">
+                    <div class="card p-4 shadow-sm border-0">
+                        <form>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingName" placeholder="Your Name" required>
+                                <label for="floatingName">Your Name</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com" required>
+                                <label for="floatingEmail">Email address</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingSubject" placeholder="Subject">
+                                <label for="floatingSubject">Subject</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" placeholder="Leave a message here" id="floatingTextarea" style="height: 120px" required></textarea>
+                                <label for="floatingTextarea">Message</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100 py-3">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white text-center">
+        <div class="container">
+            <p class="mb-0">Copyright &copy; 2025 CIT Center. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init({ once: true, duration: 600 });</script>
+</body>
+</html>
